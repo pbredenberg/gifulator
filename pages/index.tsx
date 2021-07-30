@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import React from 'react';
+import GifImage from '../components/gif';
 import { attributes, react as PageContent } from '../content/home.md';
 import getAllGifs, { GifPageData } from '../utilities/get-all-gifs';
 import BasePage from './base';
@@ -18,7 +21,10 @@ export default class HomePage extends BasePage<HomeProps> {
             {
               this.props.gifIndex.map((gif, i) => {
                 return (
-                  <img key={i} src={gif.data.gif} alt={gif.data.title} />
+                  <div key={i}>
+                    <GifImage gifUrl={gif.data.gif} title={gif.data.title} />
+                    <a href={`/gif/${encodeURIComponent(gif.id)}`}>View</a>
+                  </div>
                 )
               })
             }

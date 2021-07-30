@@ -1,5 +1,6 @@
 import { GetStaticPropsContext } from 'next';
 import { Component } from 'react';
+import GifImage from '../../components/gif';
 import getAllGifs, { GifPageData } from '../../utilities/get-all-gifs';
 
 export interface GifPageProps {
@@ -12,9 +13,13 @@ export default class Gif extends Component<GifPageProps> {
     const { gifData } = this.props;
 
     return (
-    <div className='gif'>
-      <img className='gif__image' src={gifData.data.gif} alt={gifData.data.title} />
-    </div>
+      <div>
+        <GifImage
+          gifUrl={gifData.data.gif}
+          title={gifData.data.title}
+          tags={gifData.data.tags}
+        />
+      </div>
     );
   }
 }
