@@ -17,3 +17,17 @@ collections:
           - { label: "Page Title", name: "title", widget: "string" }
           - { label: "Main Headline", name: "mainHeadline", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown", required: false }
+  - label: "Gifs"
+    name: "gif"
+    label_singular: "Gif"
+    folder: "content/gif"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Gif", name: "gif", widget: "image"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        allow_add: true
+        max: 10
