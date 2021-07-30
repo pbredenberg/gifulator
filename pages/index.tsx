@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import GifImage from '../components/gif';
 import { attributes, react as PageContent } from '../content/home.md';

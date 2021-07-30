@@ -14,11 +14,15 @@ export default class Gif extends Component<GifPageProps> {
 
     return (
       <div>
-        <GifImage
-          gifUrl={gifData.data.gif}
-          title={gifData.data.title}
-          tags={gifData.data.tags}
-        />
+        {
+          gifData && gifData.data ?
+            <GifImage
+              gifUrl={gifData.data.gif}
+              title={gifData.data.title}
+              tags={gifData.data.tags}
+            />
+            : ''
+        }
       </div>
     );
   }
@@ -54,6 +58,6 @@ export async function getStaticPaths() {
 
   return {
     paths: pathParamsObject,
-    fallback: true,
+    fallback: false,
   }
 }

@@ -12,6 +12,7 @@ export default class HomePreview extends BasePreview {
     return (
       <Index
         mainHeadline={this.getData('mainHeadline')}
+        gifIndex={[]}
       />
     );
   }
