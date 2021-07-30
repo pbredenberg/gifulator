@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+# The place where Netlify CMS will save the image
+media_folder: "public/images"
+# The place where Next.js will reference the image once the site is built
+public_folder: "/images"
+local_backend: true
+collections:
+  - name: "uniques"
+    label: "Unique Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Main Headline", name: "mainHeadline", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+  - label: "Gifs"
+    name: "gif"
+    label_singular: "Gif"
+    folder: "content/gif"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Gif", name: "gif", widget: "image"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        allow_add: true
+        max: 10
