@@ -18,6 +18,15 @@ Once you have both, you can use the one-click installer below:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/pbredenberg/gifulator&amp;stack=cms)
 
+After Netlify walks you through the process of setting up the app, you need to get yourself
+logged into the CMS admin:
+
+1. Visit: `app.netlify.com/sites/your-site-name/identity`.
+2. Click "Enable Identity" and type your email into the "Invite Users" box.
+3. Click the "Accept Invite" link in the email that should arrive in your inbox before
+   too long.
+4. Give yourself a password.
+
 ## Getting Started
 
 First, run the development server:
