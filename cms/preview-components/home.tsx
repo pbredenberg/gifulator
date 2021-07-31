@@ -1,5 +1,5 @@
 import React  from 'react';
-import Index from '../../pages/index';
+import HomePageComponent from '../../components/pages/home';
 import BasePreview from './base';
 
 /**
@@ -10,9 +10,9 @@ import BasePreview from './base';
 export default class HomePreview extends BasePreview {
   render(): JSX.Element {
     return (
-      <Index
+      <HomePageComponent
         mainHeadline={this.getData('mainHeadline')}
-        gifIndex={[]}
+        gifs={[]}
       />
     );
   }
