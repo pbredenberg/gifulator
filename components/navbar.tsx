@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="sticky">
       <ul className={'nav'}>
-        <li className={'nav__item'}><Link href="/">Home</Link></li>
+        <li className={'nav__item'}><Link href="/">All Gifs</Link></li>
       </ul>
     </nav>
   )
