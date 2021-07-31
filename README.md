@@ -1,10 +1,22 @@
 # Gifulator
 
-Gifulator is your own personal animated gif library. Save and categorize your favoritist gifs from all over the internet!
+Gifulator is your own personal animated gif library. Save, categorize, and self-host your
+most favoritist gifs from all over the internet!
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Eventually, we'll integrate the site with [Netlify CMS](https://www.netlifycms.org/) and deploy it to their platform for free.
+## Deploy To Netlify
+
+This project is intended to be used with [Netlify CMS](https://www.netlifycms.org/) as its backend.
+
+To get started you need:
+
+- A github.com account
+- A free-tier Netlify account
+
+Once you have both, you can use the one-click installer below:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/pbredenberg/gifulator&amp;stack=cms)
 
 ## Getting Started
 
