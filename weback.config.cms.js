@@ -4,7 +4,7 @@ var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './cms/cms.ts',
-  target: 'web',
+  target: 'node',
   output: {
     filename: 'cms.js',
     path: path.resolve(__dirname, 'out/admin/assets'),

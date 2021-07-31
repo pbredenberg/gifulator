@@ -8,7 +8,7 @@
     "build:cms": "webpack --config weback.config.cms.js",
     "cms": "npm run build && concurrently \"npm run build:cms -- --watch\" \"netlify-cms-proxy-server\" \"http-server -c-1 ./out\"",
     "start": "next start",
-    "export": "npm run build && next export"
+    "export": "npm run build && npm run build:cms"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
